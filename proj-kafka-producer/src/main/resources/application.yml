@@ -1,0 +1,17 @@
+server:
+  port: 9090
+  
+topicos:
+  customer:
+    request:
+      topic: "customer.request.topic.v1"
+      
+spring:
+  application:
+    name: proj-kafka-producer
+  kafka:
+    bootstrap-servers: localhost:9092
+  datasource:
+    url: jdbc:postgresql://localhost:5432/KafkaExampleApp
+    username: postgres
+    password: 123456
